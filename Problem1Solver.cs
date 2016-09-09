@@ -10,31 +10,23 @@ namespace ProjectEulerSolutions
 
     Find the sum of all the multiples of 3 or 5 below 1000.
     */
-    class Problem1Solver
+    class Problem1Solver : ISolver
     {
-        public int solution;
-
-
-        public Problem1Solver()
+        public long solve()
         {
-            this.solution = solve(3, 5, 1000);
-        }
-
-        public int getSolution()
-        {
-            return solution;
+            return solveLogic(3, 5, 1000);
         }
 
 
-        public int solve(int firstMultiple, int secondMultiple, int maximumValue)
+        public int solveLogic(int firstMultiple, int secondMultiple, int maximumValue)
         {
             var firstMultiples = from number in Enumerable.Range(0, maximumValue)
-                                 where ( number % firstMultiple == 0 )
+                                 where (number % firstMultiple == 0)
                                  select number;
 
             var secondMultiples = from number in Enumerable.Range(0, maximumValue)
-                                 where (number % secondMultiple == 0)
-                                 select number;
+                                  where (number % secondMultiple == 0)
+                                  select number;
 
             var allMultiples = firstMultiples.Union(secondMultiples);
 
@@ -42,8 +34,5 @@ namespace ProjectEulerSolutions
 
             return sum;
         }
-
-
-
     }
 }

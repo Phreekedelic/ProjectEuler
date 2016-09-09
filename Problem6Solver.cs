@@ -21,19 +21,11 @@ namespace ProjectEulerSolutions
     Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
     */
-    class Problem6Solver
+    class Problem6Solver : ISolver
     {
-
-        public int solution;
-
-        public Problem6Solver()
+        public long solve()
         {
-            solution = solve(100);
-        }
-
-        public int getSolution()
-        {
-            return solution;
+            return solve(100);
         }
 
         public int solve(int n)

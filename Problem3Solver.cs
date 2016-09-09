@@ -10,27 +10,13 @@ namespace ProjectEulerSolutions
     The prime factors of 13195 are 5, 7, 13 and 29.
 
     What is the largest prime factor of the number 600851475143 ?
-        */
-    class Problem3Solver
+    */
+    class Problem3Solver : ISolver
     {
-
-        public long solution;
-
-        public Problem3Solver()
+        public long solve()
         {
-            solution = solve(600851475143);
-        }
-
-        public long getSolution()
-        {
-            return solution;
-        }
-
-        public long solve(long originalNumber)
-        {
-            long largestPrimeFactor = recursiveSolve(originalNumber, 1);
-            return largestPrimeFactor;
-
+            long result = recursiveSolve(600851475143, 1);
+            return result;
         }
 
         public long recursiveSolve(long number, long lastPrimeFactor)
@@ -47,6 +33,7 @@ namespace ProjectEulerSolutions
             return number;
         }
 
+        //todo: refactor solvers into static classes, add a PrimeTester class
         public bool isPrime(long candidatePrime)
         {
             if( candidatePrime <= 1)
@@ -72,7 +59,5 @@ namespace ProjectEulerSolutions
             }
             return true;
         }
-
-
     }
 }

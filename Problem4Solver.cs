@@ -11,24 +11,9 @@ namespace ProjectEulerSolutions
 
     Find the largest palindrome made from the product of two 3-digit numbers.
     */
-    class Problem4Solver
+    class Problem4Solver : ISolver
     {
-
-        public int solution;
-         
-        public Problem4Solver()
-        {
-            solution = solve();
-        }
-
-        public int getSolution()
-        {
-            return solution;
-        }
-
-
-
-        public int solve()
+        public long solve()
         {
 
             int highestCandidate = 0;
@@ -47,7 +32,6 @@ namespace ProjectEulerSolutions
 
             return highestCandidate;
         }
-
 
         public bool isPalindrome(int candidate)
         {
