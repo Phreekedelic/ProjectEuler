@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ISolver.cs" />
+    <Compile Include="PrimeTester.cs" />
     <Compile Include="Problem1Solver.cs" />
     <Compile Include="Problem2Solver.cs" />
     <Compile Include="Problem3Solver.cs" />

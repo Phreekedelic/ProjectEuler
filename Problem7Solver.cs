@@ -16,7 +16,19 @@ namespace ProjectEulerSolutions
     {
         public long solve()
         {
-            throw new Exception();
+            PrimeTester tester = new PrimeTester();
+            long candidate = 0;
+            int primesFound = 0;
+            while (primesFound < 10001)
+            {
+                candidate++;
+
+                if (tester.isPrime(candidate))
+                {
+                    primesFound++;
+                }
+            }
+            return candidate;
         }
 
     }
