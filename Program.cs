@@ -27,10 +27,13 @@ namespace ProjectEulerSolutions
 
             Console.WriteLine("Solution 4: " + solver4.getSolution());
 
-
             Problem5Solver solver5 = new Problem5Solver();
 
             Console.WriteLine("Solution 5: " + solver5.getSolution());
+
+            Problem6Solver solver6 = new Problem6Solver();
+
+            Console.WriteLine("Solution 6: " + solver6.getSolution());
 
             //wait for key press before quitting
             Console.ReadLine();
