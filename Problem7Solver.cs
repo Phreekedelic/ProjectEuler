@@ -14,14 +14,9 @@ namespace ProjectEulerSolutions
     */
     class Problem7Solver : ISolver
     {
-        public int getSolution()
-        {
-            return solution;
-        }
-
         public long solve()
         {
-
+            throw new Exception();
         }
 
     }
