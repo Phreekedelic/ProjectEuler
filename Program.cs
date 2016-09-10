@@ -20,6 +20,7 @@ namespace ProjectEulerSolutions
             solvers.Add(new Problem5Solver());
             solvers.Add(new Problem6Solver());
             solvers.Add(new Problem7Solver());
+            solvers.Add(new Problem8Solver());
 
             int problemNumber = 1;
             foreach( ISolver solver in solvers)

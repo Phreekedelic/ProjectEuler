@@ -52,6 +52,7 @@
     <Compile Include="Problem5Solver.cs" />
     <Compile Include="Problem6Solver.cs" />
     <Compile Include="Problem7Solver.cs" />
+    <Compile Include="Problem8Solver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
